@@ -1,50 +1,403 @@
-%
-% This is a Dippa editor document template. The template suits best for academic papers
-% written in Finnish.
-%
-
-% Add a document type 'article' that suits for academic papers
 \documentclass[a4paper]{article}
 
-% Encoding that fits to Finnish language
+% Encoodaus, joka sopii suomenkielellä (esim. ä ja ö)
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-% Hyphenation for Finnish
+% Suomenkielinen tavutus
 \usepackage[finnish]{babel}
 
-% References.
-% NOTICE: References are currently not supported by Dippa Editor
+% Viitteet
 \usepackage{natbib}
 
+\usepackage{alltt}
+
+% Otsikkojen päätteetön fontti
+% \usepackage{sectsty}
+% \allsectionsfont{\sffamily\large}
+
+% Viitteiden merkit
 \bibpunct{(}{)}{;}{a}{,}{,}
 
-% Begin the document
+\usepackage{titlesec}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}{}
+\titlespacing{\subsection}{0pt}{*1.5}{*1.0}
+
 \begin{document}
 
-% Document title
-\title{\huge Title \\ \large Subtitle}
-\date{1.1.2012}
-\author{Author name \\ author@email.fi}
+\title{\small Yrityksen rahoitus \\ \huge Tenttivastaukset}
+\date{25.2.2012}
+\author{Mikko Koski \\ mikko.koski@aalto.fi \\ 66467F}
 \maketitle
 
-\large
+\normalsize
+\setlength{\parindent}{0cm}
 
-% First section
-\section{Tämä on ensimmäinen iso otsikko, esim. Johdanto}
+% \section{Tentti 2009-06}
 
-Tässä on johdantokappale
+\subsection{Diskonttokorko (engl. discount rate)}
 
-\section{Seuraava iso otsikko}
 
-Tässä on sisältöä seuraavan ison otsikon alla
 
-\subsection{Alaotsikko}
+\subsection{Beta (termi ja laskeminen)}
 
-Tässä on alaotsikko ja viittaus esimerkkidokumenttiin \citep{koski2012}
+\subsection{Velan suhde omaan pääomaan (engl. debt-equity ratio)}
 
-\bibliographystyle{plainnat}
-\bibliography{ref}
+\subsection{Riskittömän tuoton korko (engl. risk-free rate)}
 
-% End of the document
+\subsection{Markkinaportfolion riskipreemio (engl. expected risk premium on the market portfolio)}
+
+\subsection{Projektin tuottovaatimus (laskeminen) (engl. required return for the project)}
+
+\subsection{Osakkeiden tuottovaatimus (laskeminen) (required return on the shares)}
+
+\subsection{Option hintaan vaikuttavat tekijät (essee) (engl. factors affecting option prices)}
+
+\subsection{Put-call pariteetti (essee) (engl. put-call-parity)}
+
+\subsection{Täydelliset markkinat (engl. perfect capital markets)}
+
+\subsection{Omavaraisuusaste (engl. equity asset ratio)}
+
+\subsection{Omavasaisuusasteen vaikutus yrityksen arvoon}
+
+\subsection{Suuret institutionaaliset sijoittajat suosivat monikansallisia monitoimialayrityksiä, koska sijoitukset niihin ovat vain yhdellä toimialalla toimivia yrityksiä riskittömämpiä. (Totta vai tarua?)}
+
+\subsection{Keskimääräinen pääoman kustannus (WACC) (engl. weighted average cost of capital)}
+
+\subsection{Nettonykyarvo (Net present value, NPV)}
+
+NPV:llä voidaan laskea yksittäisen investointiprojektin kannattavuutta. Silloin lasketaan itse asiassa arvio \textbf{investoinnin aiheuttamasta muutoksesta yrityksen liiketoiminnan arvossa}. 
+
+\subsection{Kun projektin kannattavuutta arvioidaan NPV:n avulla, tulisi aina käyttää diskonttokorkona yrityksen keskimääräistä pääoman kustannusta (WACC) (Totta/tarua?)}
+
+\subsection{Modiglianin ja Millerin (MM) teoriat I ja II (taustat, teoriat, johtopäätökset)}
+
+\subsection{Markkinoiden heikon tehokkuuden olettamus (weak form market efficiency)}
+
+\subsection{Huomaat, että yrityksen johtajat tekevät suuria voittoja sijoittamalla oman yrityksensä osakkeisiin. Tämä on vastoin markkinoiden heikon tehokkuuden olettamusta (totta/tarua)}
+
+\subsection{Mitä enemmän osakkeen tuotto vaihtelee, sitä korkeampaa tuottoa sijoittajat odottavat (totta/tarua)}
+
+\subsection{Osto-optio (Call)}
+
+\subsection{Myyntioptio (Put)}
+
+\subsection{Osto-option myyminen on tuotoltaan identtinen myyntioption ostamisen kanssa}
+
+\subsection{Oman pääoman kustannus (cost of equity)}
+
+\subsection{Osakkeiden takaisinosto (repurchase stock)}
+
+\subsection{Markkinaportfolion riskipreemio (risk premium on market portfolio)}
+
+\subsection{Markkinaportfolion keskihajonta (market portfolio standerd deviation)}
+
+\subsection{Markkinaportfolion riskipreemio on 8\% ja keskihajonta 22\%. Mikä on sellaisen portfolion riskipreemio, jonka sijoituksista 25\% on kiinni Onkia Oy:n osakkeissa ja 75\% Edll Oy:n osakkeissa? Onkian beta on 1,1 ja Edll:n 1,25}
+
+\subsection{Vapaa kassavirta (Free cash flow FCF)}
+
+Yrityksen liiketoiminta synnyttää vapaata rahavirtaa.
+
+Vapaa kassavirta lasketaan
+
+\[
+\begin{array}{lcl}
+Free\ Cash\ Flow & = & Unlevered\ Net\ Income \\
+ & & + Deprication \\
+ & & - Capital\ Expenditures \\
+ & & - Increase\ in\ Net\ Working\ Capital \\
+\end{array}
+\]
+
+\[Unlevered\ Net\ Income = EBIT - Intrests - Taxes\]
+
+
+Missä: Deprication = verot, Capital expeditures = investoinni, Increase in Net Working Capital = Nettopääoman kasvu
+
+Vapaa rahavirta määrittää liiketoiminnan arvon.
+
+\[
+V_0 = \frac{FCF_1}{1 + r_{wacc}} + \frac{FCF_2}{(1 + r_{wacc})^2} + \dots + \frac{FCF_N}{(1 + r)^N} + \frac{V_N}{(1 + r_{wacc})^N}
+\]
+
+\subsection{Nettopääoman (Net working capital)}
+
+Nettopääoman kasvu
+
+\[ \Delta NWC_t = NWC_t - NWC_{t-1} \]
+
+\[
+\begin{array}{lcl}
+Net\ Working\ Capital & = & Current\ Assets + Current\ Liabilities \\
+ & = & Cash + Inventory + Receivables - Payables \\
+\end{array}
+\]
+
+Missä: Inventory = Vaihto-omaisuus, Receivables = Lyhytaikaiset saamiset, Payables = Lyhytaikaiset velat
+
+\subsection{Marginaalinen veroaste (corporate marginal tax rate)}
+
+\subsection{APV-menetelmä (Adjusted Present Value method)}
+
+\subsection{Tase (Balance sheet)}
+
+\subsection{Acquisition?}
+
+% \section{Tentti 2009_03}
+
+\subsection{Odotettu tuotto (expected return)}
+
+Odotettu tuotto voidaan laskea eri tuotto-odotusten ja niiden toteutumisen todennäköisyyksien tulojen summasta.
+
+Esimerkki: Yrityksen arvo on 120e. Vuoden päästä arvo on 100e 40\% tn:llä ja 170e 60\% tn:llä
+
+Tästä saadaan: Vuoden päästä tuotto on 40\% tn:llä -16.67\% ja 70.59\% tn:llä 60\%
+
+Odotettu tuotto (expected (mean) return):
+
+\[
+E[R] = \sum_R{p_R \times R}
+\]
+
+Missä:
+
+$p_R$ \quad Todennäköisyys
+$R$ \quad Todennäköisyyttä vastaava tuotto-odotus
+
+Tästä saadaan:
+
+\[
+E[R] = 0.4 \times -16.67\% + 0.6 \times 70.59\% = 49.02%
+\]
+
+Odotetun tuoton avulla voidaan laskea varianssi ja keskihajonta eli volatiliteetti.
+
+\subsection{Volatiliteetti}
+
+Varianssin laskeminen odotetun keskimääräisen tuoton avulla.
+
+Esimerkki: Yrityksen arvo on 120e. Vuoden päästä arvo on 100e 40\% tn:llä ja 170e 60\% tn:llä (, jolloin odotettu tuotto on 49.02%)
+
+Tästä saadaan: Vuoden päästä tuotto on 40\% tn:llä -16.67\% ja 70.59\% tn:llä 60\%
+
+\[
+Var(R) = E[(R - E[R])^2] = \sum_R{p_R \times (R - E[R])^2}
+\]
+
+Kaavassa $R - E[R]$ on poikkeama keskimääräisestä tuotosta
+
+Esimerkkiyritykselle saadaan tällöin
+
+\[
+Var(R) = 40\% \times (49.02\% + 16.67\%)^2 + 60\% \times (49.02\% - 70.59\%)^2 = 0.03059
+\]
+
+Volatiliteetti, eli keskihajonta (standard deviation) on varianssin neliö:
+
+Volatility = Standard Deviation = $\sqrt{Variance}$
+
+Tällöin voidaan laskea esimerkille volatiliteetti
+
+\[
+SD(R) = \sqrt{Var(R)} = \sqrt{0.03059} = 17.49\%
+\]
+
+\subsection{Korrelaatio (correlation)}
+
+
+
+\subsection{Olet investoinut Coda rahastoon, jolla on 11\% odotettu tuotto ja 20\% volatiliteetti. Pohdit pitäisikö sinun lisätä Venture rahastoa omaan sijoitusportfolioosi. Venture rahaston odotettu tuotto on 19\%, volatiliteetti 60\% ja korrelaatio 0,25 Cofa rahaston kanssa. Laske annettujen tiedon perusteella kannattaako Venture rahastoa lisätä omaan sijoitusportfolioosi. Riskitön korkokanta on 3\%}
+
+\subsection{Pääomarakenteen vaikutus yrityksen arvoon (täydellisillä markkinoilla) (how capital structure affects the value)}
+
+\subsection{Tyypillisimmät epätäydellisyydet ja vaikutukset (suorat ja epäsuorat) pääomarakenteeseen ja arvoon
+(the most common imperfections)}
+
+\subsection{Laske eurooppalaisen osto-option hinta kun lunastushinta eli toteutushinta on X (The price of European call option having an exercie price of X)}
+
+\subsection{Yhtiövero (corporate tax rate)}
+
+\subsection{Velaton pääoman kustannus (unlevered cost of capital)}
+
+\subsection{Yrityksen arvo ilman velkaa (value without leverage)}
+
+\subsection{Yrityksen arvo velan kanssa (value with leverage)}
+
+% \section{Tentti 2007_03}
+
+\subsection{Yrityksen arvo tänään (Company's value today)}
+
+\subsection{Payout ratio}
+
+\subsection{Security market line}
+
+\subsection{Markkinaportfolio}
+
+\subsection{Markkinariski}
+
+\subsection{Efficient portfolios}
+
+\subsection{Unique risk}
+
+\subsection{Risk-free interest rate}
+
+\subsection{Standard deviation of return}
+
+\subsection{Expected return}
+
+\subsection{Pääoman rakenteen vaikutuksista täydellisillä ja epätäydellisillä markkinoilla}
+
+\subsection{Hinta joko nousee tai laskee (miten vaikuttaa laskuissa?)}
+
+% \section{Tentti 2005_05}
+
+\subsection{MM I proposition}
+
+\subsection{OTC market}
+
+\subsection{Tax shield}
+
+\subsection{WACC}
+
+Pääoman painotettu keskimääräinen kustannus.
+
+Painoitettu tarkoittaa sitä, että otetaan huomioon velka/omapääoma suhde.
+
+\[
+r_{WACC} = \frac{E}{E + D} * r_E + \frac{D}{E + D} * r_D * (1 - \tau_c)
+\]
+
+Missä: 
+
+E = equity, D = debt
+
+$r_E$ = oman pääoman kustannus = \textbf{CAPM}, Capital Asset Pricing Model
+
+$r_D$ = vieraan pääoman kustannus = Luottoriski
+
+Huom! Laskuissa annetaan usein velan suhde omaan pääomaan (debt/equity ratio). Tästä voidaan laskea:
+
+\[
+\frac{E}{E + D} = \frac{1}{1 +r}
+\]
+
+\[
+\frac{D}{E + D} = \frac{r}{1 +r}
+\]
+
+Jos esim D/E ratio on 0.6, saadaan
+
+\[
+\frac{E}{E + D} = \frac{1}{1 + 0.6} = 0.625
+\]
+
+\[
+\frac{D}{E + D} = \frac{r}{1 +r} = 0.375
+\]
+
+\subsection{Unique risk}
+
+\subsection{Semi-strong market efficiency}
+
+\subsection{Pääoman markkina-arvo (market value of outstanding equity)}
+
+Arvo, jonka markkinat ovat valmiita maksamaan yrityksen omistamasta pääomasta (tehtaat, tuotantolaitteet ym.)
+
+Suhde liiketoiminnan arvoon (Enterprise Value, EV)
+
+\[Enterprise Value = Market Value Of Equity + Debt - Cash\]
+
+\subsection{Odotettu tuotto (expected rate of return)}
+
+\subsection{Option toteutushinta (exercise price)}
+
+\subsection{Option erääntymispäivä (maturity date)}
+
+\subsection{Tuottokäytä (payoff graph)}
+
+\subsection{Voittokäyrä (profit graph)}
+
+\subsection{Jos kohdeosakkeen beta on positiivinen, onko tämän portfolion beta positiivinen vai negatiivinen?}
+
+\subsection{Ulosmaksusuhde (pay-out ratio)}
+
+\subsection{Mitä suurempi yrityksen ulosmaksusuhde on, sitä parempi se on yrityksen osakkeenomistajille (totta/tarua?)}
+
+\subsection{Varrantti (Warrant)}
+
+\subsection{Varrantti antaa omistajilleen mahdollisuuden vaihtaa jokaisen velkakirjan ennalta määrättyyn määrään osakkeita (totta/tarua?)}
+
+\subsection{Salkunhoitaja Miettinen on hankkimassa uusia osakkeita salkkuunsa. Hän analysoi GWB yritystä ja antaa sille arvosanan 3. Markkinoiden yksimielinen arvio taas on 2. Näin ollen Miettisen ei kannata ostaa yrityksen osakkeita.}
+
+\subsection{Vaikutus osto-option arvoon?}
+a) Osakkeen hinta nousee (stock price rises)
+b) Korko nousee (interest rate rises)
+c) Erääntymisaika kasvaa (time to maturity becomes larger)
+d) Osakkeen volatiliteetti kasvaa (stock's volatility increases)
+
+\subsection{Valtion obligaatio (Treasure bond)}
+
+\subsection{Obligaation korko (yield)}
+
+\subsection{Obligaation duraatio (duration)}
+
+\subsection{Obligaation volatiliteetti}
+
+% Muut
+
+\subsection{Yhden hinnan laki}
+
+Arbitraasin (riskittömän pikavoiton) mahdollisuus on lyhytikäinen.
+Esimerkki: kullan hinta on sama Lontoossa ja New Yorkissa
+
+\subsection{Nykyarvo (Present value)}
+
+\[
+PV = \frac{C}{(1 + r)^n}
+\]
+
+Missä: C = nykyarvo, r = tuottovaatimus
+
+Useampana ajanhetkenä toteutuvan rahavirran nykyarvo:
+
+\[
+PV = \frac{C_1}{(1 + r)} + \frac{C_1}{(1 + r)^2} + \dots + \frac{C_N}{(1 + r)^N} = \sum_{n=1}^{N} \frac{C_n}{(1 + r)^n}
+\]
+
+Ikuinen kasvava maksusuoritus
+
+\[
+PV (growing perpetuity) = \frac{C}{r - g}
+\]
+
+Missä: g = kasvuprosentti
+
+\subsection{Kuponkimaksu (coupons)}
+
+Joukkovelkakirjojen korkomaksu. $Kuponkikorko = Kuponkimaksu / Nimellisarvo$
+
+\subsection{Laina-ajan päättymispäivä (maturity date)}
+
+\subsection{Velkakirjan nimellisarvo (face value)}
+
+\subsection{Oman pääoman tuottovaatimus}
+
+\subsection{P/E-luku}
+
+\subsection{CAPM, Capital Asset Pricing Model}
+
+\[
+\begin{array}{lcl}
+E[R_i] & = & Risk-Free\ Interest\ Rate + Risk\ Premium \\
+ & = & r_f + \beta_i \times ( E [R_{Mkt} - r_f] )
+\end{array}
+\]
+
+Missä:
+
+$\beta$ = Tarkasteltavan sijoituskohteen (i) systemaattista riskiä kuvaava suure
+
+$( E [R_{Mkt} - r_f] )$ = Markkinaportfolion riskipreemio
+
 \end{document}
