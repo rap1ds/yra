@@ -259,9 +259,23 @@ Tällöin voidaan laskea esimerkille volatiliteetti
 SD(R) = \sqrt{Var(R)} = \sqrt{0.03059} = 17.49\%
 \]
 
+\subsection{Kovarianssi (Covariance)}
+
+Kovarianssin pystyy laskemaan esim. historiatiedoista, perustuen voittojen ja keskimääräisen voiton erotukseen.
+
+(Hankalahko kaava, tuskin tarvii opetella)
+
+Positiivinen kovarianssi: Osakkeet liikkuvat samaan suuntaan
+
+Negatiivinen kovarianssi: Osakkeet liikkuvat vastakkaiseen suuntaan
+
 \subsection{Korrelaatio (correlation)}
 
+Kovarianssin kertaluokkaa on vaikea tulkita. Korrelaatio vastaa tähän kysymykseen tarjoamalla samanlaisen tiedon välillä [-1,1], jolloin vertailu on helpompaa.
 
+\[
+    Corr(R_i, R_j) = \frac{Cov(R_i, R_j)}{SD(R_i) SD(R_j)}
+\]
 
 \subsection{Olet investoinut Coda rahastoon, jolla on 11\% odotettu tuotto ja 20\% volatiliteetti. Pohdit pitäisikö sinun lisätä Venture rahastoa omaan sijoitusportfolioosi. Venture rahaston odotettu tuotto on 19\%, volatiliteetti 60\% ja korrelaatio 0,25 Cofa rahaston kanssa. Laske annettujen tiedon perusteella kannattaako Venture rahastoa lisätä omaan sijoitusportfolioosi. Riskitön korkokanta on 3\%}
 
