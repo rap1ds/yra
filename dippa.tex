@@ -71,6 +71,8 @@ Beta voidaan aina laskea suhteessa johonkin portfolioon. Yllä olevat laskut las
 
 Tämä tarkoittaa: Jokaista 1\% portfolion nousua kohden i nousee $\beta_i^P\%$
 
+Jos sijoituksen i oletettu tuotto $E[Ri]$ ylittää sen vaaditun tuoton $r_i$ (laskettu CAPM), sijoitus on kannattava.
+
 \subsection{(Equity beta)}
 
 \subsection{(Debt beta)}
@@ -125,7 +127,47 @@ Paljonko markkinaportfolio tuottaa extraa suhteessa riskittömään sijoitukseen
 
 \subsection{Keskimääräinen pääoman kustannus (WACC) (engl. weighted average cost of capital)}
 
+Oman pääoman tuottovaatimus $r_E$ saadaan laskettua CAP-mallilla.
 
+Vieraan pääoman tuottovaatimus $r_D$ koostuu luottoriskistä ja sen sellaisesta.
+
+Kun nämä tuottovaatimukset painotetaan oman pääoman ja vieraan pääoman määrällä, saadaan painotettu pääoman kustannus:
+
+\[
+r_{WACC} = \frac{E}{E + D} * r_E + \frac{D}{E + D} * r_D * (1 - \tau_c)
+\]
+
+Missä: 
+
+E = equity, D = debt
+
+$r_E$ = oman pääoman kustannus = \textbf{CAPM}, Capital Asset Pricing Model
+
+$r_D$ = vieraan pääoman kustannus = Luottoriski
+
+Huom! Laskuissa annetaan usein velan suhde omaan pääomaan (debt/equity ratio). Tästä voidaan laskea:
+
+\[
+\frac{E}{E + D} = \frac{1}{1 +r}
+\]
+
+\[
+\frac{D}{E + D} = \frac{r}{1 +r}
+\]
+
+Jos esim D/E ratio on 0.6, saadaan
+
+\[
+\frac{E}{E + D} = \frac{1}{1 + 0.6} = 0.625
+\]
+
+\[
+\frac{D}{E + D} = \frac{r}{1 +r} = 0.375
+\]
+
+\[
+    r_WACC = \frac{E}{E + D} \times r_E + \frac{E}{E + D}
+\]
 
 \subsection{Nettonykyarvo (Net present value, NPV)}
 
@@ -345,6 +387,8 @@ Markkinaportfoliota voidaan pitää tehokkaana portfoliona.
 
 Vastakohtaisesti epätehokas (inefficient) portfolio on sellainen, jolla on sama volatiliteetti (riski) mutta parempi tuotto.
 
+"Portfolio on tehokas jos ja vain jos odotettu tuotto kaikille sijoituksille on yhtä suuri kuin vaadittu tuotto"
+
 \subsection{Lyhyeksi myynti (Short sale)}
 
 Osake, jota ei oikeasti omisteta "myydään" tänään ja sitoudutaan ostamaan tulevaisuudessa "takaisin".
@@ -410,44 +454,6 @@ Tuotto-odotus, jota odotetaan sijoituskohteelta. Huom! Excess return on eriasia.
 \subsection{OTC market}
 
 \subsection{Tax shield}
-
-\subsection{WACC}
-
-Pääoman painotettu keskimääräinen kustannus.
-
-Painoitettu tarkoittaa sitä, että otetaan huomioon velka/omapääoma suhde.
-
-\[
-r_{WACC} = \frac{E}{E + D} * r_E + \frac{D}{E + D} * r_D * (1 - \tau_c)
-\]
-
-Missä: 
-
-E = equity, D = debt
-
-$r_E$ = oman pääoman kustannus = \textbf{CAPM}, Capital Asset Pricing Model
-
-$r_D$ = vieraan pääoman kustannus = Luottoriski
-
-Huom! Laskuissa annetaan usein velan suhde omaan pääomaan (debt/equity ratio). Tästä voidaan laskea:
-
-\[
-\frac{E}{E + D} = \frac{1}{1 +r}
-\]
-
-\[
-\frac{D}{E + D} = \frac{r}{1 +r}
-\]
-
-Jos esim D/E ratio on 0.6, saadaan
-
-\[
-\frac{E}{E + D} = \frac{1}{1 + 0.6} = 0.625
-\]
-
-\[
-\frac{D}{E + D} = \frac{r}{1 +r} = 0.375
-\]
 
 \subsection{Unique risk}
 
@@ -602,6 +608,14 @@ Missä:
 $\beta$ = Tarkasteltavan sijoituskohteen (i) systemaattista riskiä kuvaava suure
 
 $( E [R_{Mkt} - r_f] )$ = Markkinaportfolion riskipreemio
+
+\subsection{Capital Market Line}
+
+Riskivapaan sijoituksen ja markkinaportfolion välille vedetty viiva. Markkinaportfolio on tangettiportfolio.
+
+\subsection{Security market line, SML}
+
+Riskivapaan sijoituksen (beta 0) ja markkinaportfolion (beta 1) välille piirretty viiva return/beta kuvaajalla. CAPM oletuksen mukaan kaikki sijoitukset sijoittuvat tälle viivalle.
 
 \subsection{Pääoman kustannus, Cost of Capital}
 
