@@ -213,6 +213,16 @@ MM I: Yrityksen pääomarakenteella ei vaikutusta yrityksen arvoon (eli laina on
 
 \subsection{Mitä enemmän osakkeen tuotto vaihtelee, sitä korkeampaa tuottoa sijoittajat odottavat (totta/tarua)}
 
+Osakkeen tuoton vaihtelua kuvaa osakkeen volatiliteetti, joka kuvaa osakkeen riskiä. Kun tuoton vaihtelu nousee, riski nousee myös. Sijoittajat vaativat korkeampaa tuottoa riskille.
+
+CAP-mallin avulla voidaan laskea yrityksen i tuottovaatimus:
+
+\[
+    r_i = r_f + \beta_i (r_f + E[R_Mkt])
+\]
+
+Beta saadaan laskettua volatiliteetin ja markkinoiden korrelaation suhteen. Koska korrelaatio ei tuoton heittelyn johdosta muutu, ainoa kasvava tekiä on volatiliteetti, jolloin beta kasvaa. Kun beta kasvaa CAP-mallin kaavasta voidaan huomata, että myös tuottovaatimus kasvaa.
+
 \subsection{Osto-optio (Call)}
 
 \subsection{Myyntioptio (Put)}
@@ -272,11 +282,9 @@ Net\ Working\ Capital & = & Current\ Assets + Current\ Liabilities \\
 
 Missä: Inventory = Vaihto-omaisuus, Receivables = Lyhytaikaiset saamiset, Payables = Lyhytaikaiset velat
 
-\subsection{Marginaalinen veroaste (corporate marginal tax rate)}
-
 \subsection{APV-menetelmä (Adjusted Present Value method)}
 
-\subsection{Tase (Balance sheet)}
+
 
 \subsection{Acquisition?}
 
@@ -501,7 +509,7 @@ Muulloin...
 
 \[ V^L = V^U + PV(Verosuoja) \]
 
-MITÄ OVAT V^L JA V^U???
+Ks. APV
 
 \subsection{Efektiivinen veroprosentti}
 
