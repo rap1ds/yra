@@ -277,6 +277,25 @@ Kovarianssin kertaluokkaa on vaikea tulkita. Korrelaatio vastaa tähän kysymyks
     Corr(R_i, R_j) = \frac{Cov(R_i, R_j)}{SD(R_i) SD(R_j)}
 \]
 
+Korrelaatio -1 : Täysin negatiivinen korrelaatio, osakkeet liikkuvat täysin eri suuntaan
+
+Korrelaatio +1 : Täysin positiivinen korrelaatio, osakkeet liikkuvat täysin samaan suuntaan
+
+Kaavan pyörittelyä:
+
+Kovarianssi osakkeen itsensä kanssa:
+\[
+\begin{array}{lcl}
+Cov(R_s, R_s) & = & E[(R_s - E[R_s])(R_s - E[R_s])] = E[(R_s - E[R_s])^2] \\
+ & = & Var(R_s)
+\end{array}
+\]
+
+Edellisestä saadaan:
+\[
+Corr(R_s, R_s) = \frac{Cov(R_s, R_s)}{SD(R_s) SD(R_s)} = \frac{Var(R_s)}{SD(R_s)^2} = 1
+\]
+
 \subsection{Olet investoinut Coda rahastoon, jolla on 11\% odotettu tuotto ja 20\% volatiliteetti. Pohdit pitäisikö sinun lisätä Venture rahastoa omaan sijoitusportfolioosi. Venture rahaston odotettu tuotto on 19\%, volatiliteetti 60\% ja korrelaatio 0,25 Cofa rahaston kanssa. Laske annettujen tiedon perusteella kannattaako Venture rahastoa lisätä omaan sijoitusportfolioosi. Riskitön korkokanta on 3\%}
 
 \subsection{Pääomarakenteen vaikutus yrityksen arvoon (täydellisillä markkinoilla) (how capital structure affects the value)}
