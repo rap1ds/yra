@@ -12,10 +12,6 @@
 
 \usepackage{alltt}
 
-% Otsikkojen päätteetön fontti
-% \usepackage{sectsty}
-% \allsectionsfont{\sffamily\large}
-
 % Viitteiden merkit
 \bibpunct{(}{)}{;}{a}{,}{,}
 
@@ -84,6 +80,8 @@ Portfolion beta on sijoituksien painotuksilla keskiarvo betoista:
 \]
 
 \subsection{(Equity beta)}
+
+
 
 \subsection{(Debt beta)}
 
@@ -618,13 +616,38 @@ PV (growing perpetuity) = \frac{C}{r - g}
 
 Missä: g = kasvuprosentti
 
-\subsection{Kuponkimaksu (coupons)}
+\subsection{Kuponkimaksu (coupons, coupon payments, CPN)}
 
-Joukkovelkakirjojen korkomaksu. $Kuponkikorko = Kuponkimaksu / Nimellisarvo$
+Joukkovelkakirjojen korkomaksu (jos maksetaan kerran vuodessa). $Kuponkikorko = Kuponkimaksu\ vuodessa / Nimellisarvo$
+
+Coupon payment CPN
+\[
+    CPN = \frac{Coupon\ rate \times FV}{Number\ of\ Coupon\ Payments\ per\ Year}
+\]
 
 \subsection{Laina-ajan päättymispäivä (maturity date)}
 
-\subsection{Velkakirjan nimellisarvo (face value)}
+\subsection{Velkakirjan nimellisarvo (face value, principal)}
+
+Velkakirjasta maksettava arvo velka-ajan päättyessä. (after n years, at maturity)
+
+\subsection{Yield to maturity}
+
+\subsection{Velkakirjan arvottaminen}
+
+\[
+    P = CPN \times \frac{1}{y} (1 - \frac{1}{(1 + y)^N}) + \frac{FV}{(1 + y)^N}
+\]
+
+Missä:
+
+P = Velkakirjan nykyarvo
+
+CPN = Kuponkimaksu
+
+y = Yield to Maturity
+
+N = Laina-aika (vuosissa)
 
 \subsection{Oman pääoman tuottovaatimus}
 
@@ -638,7 +661,7 @@ Millä hinnalla yritys saa vierasta pääomaa?
 
 CAP-mallia voitaisiin soveltaa, jos velan beta (debt beta) olisi tiedossa.
 
-Yield to maturityn avulla:
+Vieraan pääoman kustannus voidaan laskea myös Yield to Maturityn avulla (Ks.)
 
 \[
     = Yield\ To\ Maturity - Prob(default) * Expected\ Loss\ Rate
@@ -716,5 +739,9 @@ Riskivapaan sijoituksen (beta 0) ja markkinaportfolion (beta 1) välille piirret
 Mitataan CAPM-mallin avulla. 
 
 Pääoman kustannus, eli pääomalta odotettava tuottovaatimus on yhtä kuin riskivapaatuotto + riskipreemio.
+
+\subsection{Jälkimarkkinat (secondary markets)}
+
+Esim. valtion velkakirjoja (bonds) voidaan myydä eteenpäin velan antamisen jälkeen. Velkakirjan edelleenmyymistä kutsutaan jälkimarkkinoiksi.
 
 \end{document}
