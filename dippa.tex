@@ -81,9 +81,11 @@ Portfolion beta on sijoituksien painotuksilla keskiarvo betoista:
 
 \subsection{(Equity beta)}
 
-
+Equity beta, eli oman pääoman beta on käytännössä sama kuin yrityksen osakkeiden beta.
 
 \subsection{(Debt beta)}
+
+Velan beta. Muodostuu esim. luottoriskistä. Riskittömän velan beta on 0.
 
 \subsection{Unlevered beta}
 
@@ -128,6 +130,8 @@ Paljonko markkinaportfolio tuottaa extraa suhteessa riskittömään sijoitukseen
 
 
 \subsection{Osakkeiden tuottovaatimus (laskeminen) (required return on the shares)}
+
+CAPM
 
 \subsection{Option hintaan vaikuttavat tekijät (essee) (engl. factors affecting option prices)}
 
@@ -221,11 +225,23 @@ CAP-mallin avulla voidaan laskea yrityksen i tuottovaatimus:
 
 Beta saadaan laskettua volatiliteetin ja markkinoiden korrelaation suhteen. Koska korrelaatio ei tuoton heittelyn johdosta muutu, ainoa kasvava tekiä on volatiliteetti, jolloin beta kasvaa. Kun beta kasvaa CAP-mallin kaavasta voidaan huomata, että myös tuottovaatimus kasvaa.
 
+\subsection{Optio}
+
+Sopimus, jolla option omistajalla on oikeus (mutta ei velvollisuutta!) ostaa tai myydä sijoituksen sovitulla hinnalla.
+
+Optio, on sopimus, joten siinä on aina kaksi osapuolta: option omistaja ja option writer (mikä suomeksi?)
+
 \subsection{Osto-optio (Call)}
+
+Option omistajalla on oikeus \textbf{ostaa} sijoituksia.
 
 \subsection{Myyntioptio (Put)}
 
+Option omistajalla on oikeus \textbf{myydä} sijoituksia.
+
 \subsection{Osto-option myyminen on tuotoltaan identtinen myyntioption ostamisen kanssa}
+
+
 
 \subsection{Oman pääoman kustannus (cost of equity)}
 
@@ -579,6 +595,8 @@ P_0 = \frac{c}{1 + y_rf} eli y = \frac{c}{P_0} - 1
 
 Missä: c on vuoden päästä luvattu suoritus ja y on vaadittu tuotto. Koska riskitön $y = y_rf$
 
+MITES MUUT KUIN YHDEN VUODEN?
+
 \subsection{Valtion obligaatio (Treasure bond)}
 
 \subsection{Obligaation korko (yield)}
@@ -647,7 +665,7 @@ CPN = Kuponkimaksu
 
 y = Yield to Maturity
 
-N = Laina-aika (vuosissa)
+N = Kuponkien maksumäärä, eli $Laina-aika\ vuosissa / Kuponkimaksujen\ määrä\ per\ vuosi$
 
 Kun kuponkikorko > YTM, velkakirjan hinta > nimellisarvo. Kun kuponkikorko < YTM, velkakirjan hinta < nimellisarvo.
 
