@@ -229,15 +229,29 @@ Beta saadaan laskettua volatiliteetin ja markkinoiden korrelaation suhteen. Kosk
 
 Sopimus, jolla option omistajalla on oikeus (mutta ei velvollisuutta!) ostaa tai myydä sijoituksen sovitulla hinnalla. Sovittua hintaa kutsutaan termeillä \textbf{strike price} tai \textbf{exercise price}.
 
-Optio, on sopimus, joten siinä on aina kaksi osapuolta: option omistaja ja option writer (mikä suomeksi?)
+Optio, on sopimus, joten siinä on aina kaksi osapuolta: option omistaja ja option writer (mikä suomeksi?). Option omistajalla on \textbf{long position}, mikä tarkoittaa oikeutta käyttää optiota. Myyjällä taas on \textbf{short position}, mikä tarkoittaa velvollisuutta toteuttaa kauppa option omistajan niin tahtoessa.
+
+Option myyjä saa tietysti rahaa, koska kantaa riskin hinnan kehityksestä. Tätä rahaa kutsutaan \textbf{option premiumiksi}.
+
+Optioita on kahdenlaisia: \textbf{amerikkalaisia} ja \textbf{eurooppalaisia}. Amerikkalainen optio on mahdollista ostaa/myydä minä päivänä tahansa määräajan sisällä, eurooppalainen optio vain sovittuna päivänä.
+
+
 
 \subsection{Osto-optio (Call)}
 
 Option omistajalla on oikeus \textbf{ostaa} sijoituksia.
 
+Osto-optiota ei kannata käyttää, jos osakkeen hinta $S$ on pienempi kuin sovittu hinta $K$. Täten saatu tuotto $C$ on:
+
+\[ C = max(S - K, 0) \]
+
 \subsection{Myyntioptio (Put)}
 
 Option omistajalla on oikeus \textbf{myydä} sijoituksia.
+
+Myynti-optiota ei kannata käyttää, jos osakkeen hinta $S$ on suurempi kuin sovittu hinta $K$. Täten saatu tuotto $C$ on:
+
+\[ C = max(K - S, 0) \]
 
 \subsection{Osto-option myyminen on tuotoltaan identtinen myyntioption ostamisen kanssa}
 
