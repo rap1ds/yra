@@ -255,7 +255,21 @@ Myynti-optiota ei kannata käyttää, jos osakkeen hinta $S$ on suurempi kuin so
 
 \subsection{Osto-option myyminen on tuotoltaan identtinen myyntioption ostamisen kanssa}
 
+$P$ oston hinta
 
+$S$ osakkeen hinta
+
+$C$ Call/put price
+
+\[
+\begin{array}{lccl}
+ & S < C & S > C & P
+Sell\ Call & 0 & C - S & P
+Total & P & C - S + P & 
+Buy\ Put & C - S & 0 & -P
+Total & C - S - P & -P &
+\end{array}
+\]
 
 \subsection{Oman pääoman kustannus (cost of equity)}
 
